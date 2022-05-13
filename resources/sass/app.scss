@@ -1,1 +1,27 @@
 //
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+div.ticket{
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: silver;
+    border-radius: 20px;
+    .company{
+        text-align: center;
+       h4{
+           padding: .5rem;
+       }
+    }
+    .travel, 
+    .train-code{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
