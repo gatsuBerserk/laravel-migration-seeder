@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\TrainControllorer;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "TrainControllorer@index" )->name("main");
+Route::get('/', "TrainControllorer@index" )->name("trains.index"); 
+
+Route::get('/{id}', "TrainControllorer@show")->name('ticket');

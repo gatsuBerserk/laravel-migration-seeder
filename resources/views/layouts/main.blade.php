@@ -10,7 +10,7 @@
 <body>
     @include('partials.header') 
     <main>
-        @yield('AllTrains')
+        @yield('content') 
     </main>
 </body>
 </html>

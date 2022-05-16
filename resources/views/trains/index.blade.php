@@ -4,7 +4,7 @@
 
 @section('title', "Laravel seed")
 
-@section('AllTrains')
+@section('content')
       
         <div class="container fluid">
             <div class="row">
@@ -28,8 +28,9 @@
                                 Ora Partenza: {{$train->departure_time}}
                             </p> 
                             <h6>
-                                Codice Treno: {{$train->train_code}}
+                               <a href="{{route("ticket", $train->id)}}"> Codice Treno: {{$train->train_code}} </a>
                             </h6>
+                            
                         </div>
                       </div>
                 </div>
