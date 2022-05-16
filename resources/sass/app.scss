@@ -1,27 +1,40 @@
 //
-*{
-    padding: 0;
-    margin: 0;
+@import "~bootstrap/scss/bootstrap.scss"; 
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    margin: 50px;
+    background: #f6f2d7;
+    overflow: hidden;
+  }
+  .card-header {
+    height: 70px;
+    border: 2px solid #836602;
+    border-bottom: 2px dotted #836602;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  .card-header:before, .card-header:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 100%;
+    bottom: -12px;
+    border: 2px solid #836602;
     box-sizing: border-box;
-} 
-
-div.ticket{
-    width: 70%;
-    height: 100px;
-    margin: 0 auto;
-    margin-top: 2rem;
-    background-color: silver;
-    border-radius: 20px;
-    .company{
-        text-align: center;
-       h4{
-           padding: .5rem;
-       }
-    }
-    .travel, 
-    .train-code{
-        display: flex;
-        justify-content: space-between;
-    }
-
-}
+  }
+  .card-header:before { 
+    left: -13px;
+  }
+  .card-header:after {
+    right: -13px;
+  }
+  .card-body {
+    height: 200px;
+    border: 2px solid #836602;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+  }
